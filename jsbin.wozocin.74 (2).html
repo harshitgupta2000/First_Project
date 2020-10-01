@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<!--
+Created using JS Bin
+http://jsbin.com
+
+Copyright (c) 2020 by Chetan9876 (http://jsbin.com/wozocin/74/edit)
+
+Released under the MIT license: http://jsbin.mit-license.org
+-->
+<meta name="robots" content="noindex">
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>My Recipe</title>
+<style id="jsbin-css">
+body{
+  margin:0;
+  background-image:url("https://images.pexels.com/photos/1939485/pexels-photo-1939485.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+}
+marquee{
+  margin:0;
+  height:40px;
+  width:100%;
+  padding-top:15px;
+  padding-bottom:5px;
+  font-size:30px;
+  color: black;
+  text-shadow:5px 3px 2px white;
+}
+.header{
+  margin:0px;
+  background-image:url("https://as2.ftcdn.net/jpg/02/99/31/87/500_F_299318726_1q6nN8AAioO215KddyiARNiXaW02z8kq.jpg");
+  background-attachment:fixed;
+  padding-top:1px;
+  padding-bottom:1px;
+  height:70px;
+  color:white;
+  font-size:50px;
+}
+.header1{
+  background-color:purple;
+  height:40px;
+  margin:auto;
+}
+
+ul{
+  margin:0;
+  padding:0;
+  list-style:none;
+}
+li{
+  float:left;
+}
+a:link{
+  text-decoration:none;
+  text-decoration:none;
+  display:block;
+  text-align:center;
+  font-size:18px;
+  padding:15px;
+  
+}
+a:hover{
+  background-color:yellow;
+}
+.container{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:space-between;
+}
+ main .container .box{
+  position:relative;
+  width:350px;
+  padding:40px;
+  background:#fff;
+  box-shadow: 0 5px 15px rgba(0,0,0,.1);
+  border-radius:10px;
+  margin:20px;
+  box-sizing:border-box;
+  overflow:hidden;
+   text-align:center;
+}
+.content .box:before{
+  content:'';
+  width:50%;
+  height:100%;
+  position:absolute;
+  top:0;
+  left:0;
+  background:rgba(255,255,255,.2);
+  z-index:2;
+  pointer-events:none;
+}
+.container .box .icon{
+  position:relative;
+  width:80px;
+  height:80px;
+  color:#fff;
+  background:#000;
+  display:flex;
+  justify-content:center;
+  margin:0 auto;
+  border-radius: 50%;
+  font-size:40px;
+  font-weight:700;
+  transition:1s;
+  }
+.container .box:nth-child(1) .icon{
+  box-shadow:0 0 0 0 #e91e63;
+  background: #e91e63;
+}
+.container .box:nth-child(1):hover .icon{
+  box-shadow:0 0 0 400px #e91e63;
+}
+.container .box:nth-child(2) .icon{
+  box-shadow:0 0 0 0 yellow;
+  background: yellow;
+}
+.container .box:nth-child(2):hover .icon{
+  box-shadow:0 0 0 400px yellow;
+}
+main > img{
+  float:right;
+  max-width:100%;
+}
+.container .box .content
+{
+  position:relative;
+  z-index:1;
+  transition:0.5s;
+}
+.container .box:hover .content{
+  color:#fff;
+}
+.container .box .content h3{
+  font-size:20px;
+  margin:10px 0;
+  padding:0;
+}
+.container .box .content p{
+  margin:0;
+  padding:0;
+  }
+main{
+  background-image:url("https://images.pexels.com/photos/1103970/pexels-photo-1103970.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+}
+h1{
+  border-style:ridge;
+  background-color:#e91e63;
+  text-shadow:5px 2px 4px white;
+  margin:0px;
+ }
+h3{
+  border-style:ridge;
+  background-color:#e91e63;
+  text-shadow:5px 2px 4px white;
+  padding:0;
+  margin-bottom:0px;
+}
+footer{
+  background-color:red;
+  margin-bottom:0px;
+  margin-top:2px;
+}
+ footer >button{
+  margin:5px;
+}
+/*----------------------media queries-----------------------*/
+ 
+
+
+
+/*----------------------desktop and laptops---------------------- */
+@media (max-width:750px){
+  h1{
+    color:blue;
+   word-spacing:20px;
+  }
+}
+
+
+
+
+
+/*-------------------------Tablets and Ipads----------------------*/
+@media (min-width:401px)and(max-width:750px){
+  h1{
+    color:white;
+    word-spacing:30px;
+  }
+}
+
+
+
+
+
+/*-------------------------mobile Phone---------------------------*/
+@media (max-width:400px){
+  h1{
+    color:pink;
+  }
+  .chetu img{
+    width:100%;
+    height:auto;
+  } 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+</style>
+</head>
+<body>
+  <a name="top"></a>
+  <marquee bgcolor="red"><b> <i>WELCOME TO MY RECIPES WORLD</i> </b></marquee>
+ <center> <p class="header"><b>My Foodie Crush<b></p>
+   </center>
+   <div class="header1">
+     <ul>
+
+       <li> <a href="#">HOME</a></li>
+        <li> <a href="#">SERVICES</a></li>
+        <li> <a href="#">LINK</a></li>
+        <li> <a href="#">PRODUCT</a></li>
+        <li> <a href="#">FAQ</a></li>
+        <li> <a href="#">ABOUT</a></li>
+        <li> <a href="#">CONTACT</a></li>
+         <li> <a href="#">SIGN IN </a></li>
+     </ul>
+   </div>
+   
+   <center>
+         <div class="chetu">
+         
+           <font color="purple" size ="8px"> <h3><i><u> <b>Indian Food</b></u> <i></h3> </font>
+         <hr color="pink">
+           <img src="https://images.pexels.com/photos/2474661/pexels-photo-2474661.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" width="300px" height="180px">
+           <img src="https://images.pexels.com/photos/1051399/pexels-photo-1051399.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" width="300px" height="180px">
+           <img src="https://images.pexels.com/photos/1893556/pexels-photo-1893556.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" width="300px" height="180px">
+           <img src="https://as1.ftcdn.net/jpg/01/96/15/28/500_F_196152882_oOGQXiraQ77V1ZC9bMcKfILnedw1BbCp.jpg" width="300px" height="180px">
+           <img src="https://as1.ftcdn.net/jpg/03/38/06/74/500_F_338067450_kxvMjtcbALloKZTPGce7umsSV1GeizHI.jpg" width="300px" height="180px">
+           <img src="https://as1.ftcdn.net/jpg/02/53/90/74/500_F_253907493_zWpyBWXHAembpc896n7s2BUMhz4j4cot.jpg" width="300px" height="180px">
+           <img src="https://as2.ftcdn.net/jpg/02/37/19/57/500_F_237195758_oNylLZ6J4ujyDUUDQEfF0tIkiiDbpseU.jpg" width="300px" height="180px">
+           <img src="https://as1.ftcdn.net/jpg/03/08/63/94/500_F_308639410_Fibx1AhM3IcJ3z0Gr5g666BM7OJtvUr0.jpg" width="300px" height="180px"><br>
+             <a href="https://www.thespruceeats.com/popular-indian-dishes-1957891" color="red" size="10px"> for more information click on the link</a>
+             &nbsp;<br>
+           &nbsp;<br>
+           &nbsp;<br>
+
+          
+             <font color="purple" size ="8px"> <h3><i><u><b>Chinese Food</b></u></i></h3> </font>
+         
+           <img src="https://images.pexels.com/photos/2347311/pexels-photo-2347311.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" width="280px" height="190px">
+           <img src="https://images.pexels.com/photos/2133989/pexels-photo-2133989.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" width="280px" height="190px">
+           <img src="https://images.pexels.com/photos/461198/pexels-photo-461198.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" width="280px" height="190px">
+           <img src="https://images.pexels.com/photos/688803/pexels-photo-688803.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" width="280px" height="190px">
+           <img src="https://as2.ftcdn.net/jpg/01/64/07/15/500_F_164071564_K9GdU4Y5dLWxIQ7xk9xChbiqJlCZ0RDA.jpg" width="280px" height="190px">
+           <img src="https://as1.ftcdn.net/jpg/01/93/76/56/500_F_193765668_kmLTs2Tt7wteOf9wGdrTX3Uz4neyLVxv.jpg" width="280px" height="190px">
+           <img src="https://images.pexels.com/photos/1600727/pexels-photo-1600727.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" width="280px" height="190px">
+           <img src="https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" width="280px" height="190px"><br>
+             <a href="https://food.ndtv.com/lists/10-most-popular-chinese-dishes-740725">For more information click on this link</a>
+             &nbsp;<br>
+           &nbsp;<br>
+           &nbsp;<br>
+
+          
+             <font color="purple" size ="8px"> <h3><i><b><u>Snacks</u></b></i></h3> </font>
+         <hr color="green">
+           <img src="https://images.pexels.com/photos/86649/pexels-photo-86649.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" width="280px" height="190px">
+           <img src="https://images.pexels.com/photos/959922/pexels-photo-959922.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" width="280px" height="190px">
+           <img src="https://images.pexels.com/photos/3338681/pexels-photo-3338681.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" width="280px" height="190px">
+           <img src="https://images.pexels.com/photos/1065030/pexels-photo-1065030.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" width="280px" height="190px">
+           <img src="https://images.pexels.com/photos/1334133/pexels-photo-1334133.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" width="280px" height="190px">
+           <img src="https://images.pexels.com/photos/890505/pexels-photo-890505.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" width="280px" height="190px">
+           <img src="https://images.pexels.com/photos/3794758/pexels-photo-3794758.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" width="280px" height="190px">
+           <img src="https://images.pexels.com/photos/4051553/pexels-photo-4051553.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" width="280px" height="190px"><br>
+             <a href="https://www.indianhealthyrecipes.com/recipes/snacks/"> For more information click on this link </a>
+           &nbsp;<br>
+           &nbsp;<br>
+           &nbsp;<br>
+           &nbsp;<br>
+           &nbsp;<br>
+           </center>
+   </div>
+          <font color="purple" size="5px" align="center"> <h1><u>my favourite recipe</u></h1></font>
+          <font color="purple" size="4px" align="center"><h1><u>Bhel Puri</u></h1></font>
+           <main>
+           <center>
+           <div class="container">
+             <div class="box">
+               <div class="icon">01</div>
+               <div class="content">
+                 <h3> <u>Ingredients Name</u></h3>
+                <p> 
+     <ul>
+     <li>* Puffed rice ,</li>
+       
+     <li>Roasted peanut </li>
+     <li>* Salted rice(Namkeen) </li>
+     <li>* Chopped tomato , </li>
+     <li> Chopped onion </li>
+     <li>* Chopped coriander </li>
+     <li>* Chopped pepper </li>
+     <li>* Salt (according to taste) </li>
+     <li>* Chat masala </li>
+     <li>* juice of lemon (0.5ml to 1ml)</li>
+       </ul>
+                 
+       </div>
+       </div>
+       </div>
+       </p> 
+     <img src="https://as2.ftcdn.net/jpg/03/15/91/71/500_F_315917151_dbWWMF6wjLeEn6yaMG1jyXp4DuEJliIE.jpg" alt="img0" width="380px" height="250px">
+     <img src="https://as2.ftcdn.net/jpg/01/95/60/41/500_F_195604129_q75WhM0aUVcMnXD0fZcks92D6FIvrAfY.jpg" alt="img01" width="380px" height="250px">
+            <div class="container">
+             <div class="box">
+               <div class="icon">02</div>
+               <div class="content">
+                 <h3><u><b>Procedure to Follows:-</b></u></h3>
+                <p> 
+    <ol>
+    <li>first mix the salt,roasted peanut, chopped (tomato,onion,coriander,pepper),
+      salt(according to taste),chat masala,juice of lemon in the bowl</li>
+    
+    <li> then,mix the puffed rice and salted rice with above ingredients </li>
+    
+    <li> after then proper mix it</li>
+    
+    <li>now ready the bhel puri taste or serve :-)</li>
+  </ol>
+                </p>  
+       </div>
+     </div>
+     </div>
+  
+   </center>  
+     </main>
+           <footer> <a href="#top">
+              <button><font color="red"><b> Back to top</b></font> </button>
+              </a>
+            <font size="3px"> <center><h4> copyright @ 2020 All right reserved: recipes.com </h4></center></font>
+   </footer>
+
+   </body>
+</html>
